@@ -10,6 +10,8 @@ public class CyberNinjaHealth : MonoBehaviour
 
     public GameObject shotgunPickup;
 
+    public AudioSource ninjaDie;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +31,7 @@ public class CyberNinjaHealth : MonoBehaviour
 
         if (bossHP <= 0.0f)
         {
+            ninjaDie.Play();
             shotgunPickup.SetActive(true);
             gameObject.SetActive(false);
         }

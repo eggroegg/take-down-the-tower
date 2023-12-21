@@ -135,6 +135,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1460902899}
     m_Modifications:
+    - target: {fileID: 2166489988470975751, guid: e77087180d2c17549ab07ad2ea86b360, type: 3}
+      propertyPath: enemyDie
+      value: 
+      objectReference: {fileID: 1012384433}
+    - target: {fileID: 7019111267302894608, guid: e77087180d2c17549ab07ad2ea86b360, type: 3}
+      propertyPath: enemyShoot
+      value: 
+      objectReference: {fileID: 979334080}
     - target: {fileID: 7019111267302894611, guid: e77087180d2c17549ab07ad2ea86b360, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -256,6 +264,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyMelee
       objectReference: {fileID: 0}
+    - target: {fileID: 6272547493756730596, guid: 18b4d1b2918c47d44bdbeadf7839185f, type: 3}
+      propertyPath: enemyDie
+      value: 
+      objectReference: {fileID: 1012384433}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18b4d1b2918c47d44bdbeadf7839185f, type: 3}
 --- !u!1001 &84539692
@@ -317,6 +329,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyMelee (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6272547493756730596, guid: 18b4d1b2918c47d44bdbeadf7839185f, type: 3}
+      propertyPath: enemyDie
+      value: 
+      objectReference: {fileID: 1012384433}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18b4d1b2918c47d44bdbeadf7839185f, type: 3}
 --- !u!4 &95946741 stripped
@@ -383,6 +399,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyMelee (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6272547493756730596, guid: 18b4d1b2918c47d44bdbeadf7839185f, type: 3}
+      propertyPath: enemyDie
+      value: 
+      objectReference: {fileID: 1012384433}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18b4d1b2918c47d44bdbeadf7839185f, type: 3}
 --- !u!1 &166860458
@@ -1241,6 +1261,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyMelee
       objectReference: {fileID: 0}
+    - target: {fileID: 6272547493756730596, guid: 18b4d1b2918c47d44bdbeadf7839185f, type: 3}
+      propertyPath: enemyDie
+      value: 
+      objectReference: {fileID: 1012384433}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18b4d1b2918c47d44bdbeadf7839185f, type: 3}
 --- !u!4 &338783071 stripped
@@ -1436,6 +1460,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: ffa95619e53bc8c41b23fbd62d939a14, type: 3}
     - target: {fileID: 3219203727247164251, guid: 81b08defdd5a284449635d197fcf463e, type: 3}
+      propertyPath: gunSFX
+      value: 
+      objectReference: {fileID: 2076332918}
+    - target: {fileID: 3219203727247164251, guid: 81b08defdd5a284449635d197fcf463e, type: 3}
+      propertyPath: shotgunSFX
+      value: 
+      objectReference: {fileID: 1590586110}
+    - target: {fileID: 3219203727247164251, guid: 81b08defdd5a284449635d197fcf463e, type: 3}
       propertyPath: bulletsPrefab
       value: 
       objectReference: {fileID: 6524800392697458052, guid: dd5419657721a53488014a5c58359006, type: 3}
@@ -1463,6 +1495,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3219203727742479408, guid: 81b08defdd5a284449635d197fcf463e, type: 3}
+      propertyPath: playerDie
+      value: 
+      objectReference: {fileID: 877587804}
     - target: {fileID: 3219203727742479409, guid: 81b08defdd5a284449635d197fcf463e, type: 3}
       propertyPath: m_Name
       value: Player
@@ -1552,6 +1588,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 438493969}
     m_Modifications:
+    - target: {fileID: 2166489988470975751, guid: e77087180d2c17549ab07ad2ea86b360, type: 3}
+      propertyPath: enemyDie
+      value: 
+      objectReference: {fileID: 1012384433}
+    - target: {fileID: 7019111267302894608, guid: e77087180d2c17549ab07ad2ea86b360, type: 3}
+      propertyPath: enemyShoot
+      value: 
+      objectReference: {fileID: 979334080}
     - target: {fileID: 7019111267302894611, guid: e77087180d2c17549ab07ad2ea86b360, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -2508,6 +2552,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyMelee2
       objectReference: {fileID: 0}
+    - target: {fileID: 6272547493756730596, guid: 18b4d1b2918c47d44bdbeadf7839185f, type: 3}
+      propertyPath: enemyDie
+      value: 
+      objectReference: {fileID: 1012384433}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18b4d1b2918c47d44bdbeadf7839185f, type: 3}
 --- !u!1 &820475617
@@ -2995,6 +3043,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!82 &877587804 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 877587804, guid: f4bf8ab9d28886c4cbe8bee2d36ca84e, type: 3}
+  m_PrefabInstance: {fileID: 5512089858129852664}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &881897033
 GameObject:
   m_ObjectHideFlags: 0
@@ -3165,6 +3218,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyMelee (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6272547493756730596, guid: 18b4d1b2918c47d44bdbeadf7839185f, type: 3}
+      propertyPath: enemyDie
+      value: 
+      objectReference: {fileID: 1012384433}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18b4d1b2918c47d44bdbeadf7839185f, type: 3}
 --- !u!4 &904989869 stripped
@@ -3256,6 +3313,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!82 &979334080 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 597013875300882324, guid: f4bf8ab9d28886c4cbe8bee2d36ca84e, type: 3}
+  m_PrefabInstance: {fileID: 5512089858129852664}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &981042426
 GameObject:
   m_ObjectHideFlags: 0
@@ -3490,6 +3552,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 705034970}
     m_Modifications:
+    - target: {fileID: 2166489988470975751, guid: e77087180d2c17549ab07ad2ea86b360, type: 3}
+      propertyPath: enemyDie
+      value: 
+      objectReference: {fileID: 1012384433}
+    - target: {fileID: 7019111267302894608, guid: e77087180d2c17549ab07ad2ea86b360, type: 3}
+      propertyPath: enemyShoot
+      value: 
+      objectReference: {fileID: 979334080}
     - target: {fileID: 7019111267302894611, guid: e77087180d2c17549ab07ad2ea86b360, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -3548,6 +3618,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 7019111267302894611, guid: e77087180d2c17549ab07ad2ea86b360, type: 3}
   m_PrefabInstance: {fileID: 1012197375}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1012384433 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5512089858862692937, guid: f4bf8ab9d28886c4cbe8bee2d36ca84e, type: 3}
+  m_PrefabInstance: {fileID: 5512089858129852664}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1085089495
 GameObject:
@@ -4025,6 +4100,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyMelee (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6272547493756730596, guid: 18b4d1b2918c47d44bdbeadf7839185f, type: 3}
+      propertyPath: enemyDie
+      value: 
+      objectReference: {fileID: 1012384433}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18b4d1b2918c47d44bdbeadf7839185f, type: 3}
 --- !u!4 &1151301749 stripped
@@ -4543,7 +4622,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e6822ab8554d983499e19ccbb7009091, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.781
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -4834,6 +4913,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyMelee
       objectReference: {fileID: 0}
+    - target: {fileID: 6272547493756730596, guid: 18b4d1b2918c47d44bdbeadf7839185f, type: 3}
+      propertyPath: enemyDie
+      value: 
+      objectReference: {fileID: 1012384433}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18b4d1b2918c47d44bdbeadf7839185f, type: 3}
 --- !u!1 &1406370866
@@ -5341,6 +5424,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!82 &1563039573 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 9164007852336972859, guid: f4bf8ab9d28886c4cbe8bee2d36ca84e, type: 3}
+  m_PrefabInstance: {fileID: 5512089858129852664}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1572205094
 GameObject:
   m_ObjectHideFlags: 0
@@ -5435,6 +5523,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1590586110 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5512089859358102022, guid: f4bf8ab9d28886c4cbe8bee2d36ca84e, type: 3}
+  m_PrefabInstance: {fileID: 5512089858129852664}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1601111929
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5494,6 +5587,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyMelee (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6272547493756730596, guid: 18b4d1b2918c47d44bdbeadf7839185f, type: 3}
+      propertyPath: enemyDie
+      value: 
+      objectReference: {fileID: 1012384433}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18b4d1b2918c47d44bdbeadf7839185f, type: 3}
 --- !u!4 &1601111930 stripped
@@ -5508,6 +5605,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 705034970}
     m_Modifications:
+    - target: {fileID: 2166489988470975751, guid: e77087180d2c17549ab07ad2ea86b360, type: 3}
+      propertyPath: enemyDie
+      value: 
+      objectReference: {fileID: 1012384433}
+    - target: {fileID: 7019111267302894608, guid: e77087180d2c17549ab07ad2ea86b360, type: 3}
+      propertyPath: enemyShoot
+      value: 
+      objectReference: {fileID: 979334080}
     - target: {fileID: 7019111267302894611, guid: e77087180d2c17549ab07ad2ea86b360, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -5733,6 +5838,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponSwitching: {fileID: 557822331}
   teleporter: {fileID: 0}
+  pickup: {fileID: 1563039573}
 --- !u!212 &1665887189
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7155,5 +7261,71 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyMelee (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6272547493756730596, guid: 18b4d1b2918c47d44bdbeadf7839185f, type: 3}
+      propertyPath: enemyDie
+      value: 
+      objectReference: {fileID: 1012384433}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18b4d1b2918c47d44bdbeadf7839185f, type: 3}
+--- !u!82 &2076332918 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5512089859811879822, guid: f4bf8ab9d28886c4cbe8bee2d36ca84e, type: 3}
+  m_PrefabInstance: {fileID: 5512089858129852664}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5512089858129852664
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5512089859848088554, guid: f4bf8ab9d28886c4cbe8bee2d36ca84e, type: 3}
+      propertyPath: m_Name
+      value: SFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 5512089859848088555, guid: f4bf8ab9d28886c4cbe8bee2d36ca84e, type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 5512089859848088555, guid: f4bf8ab9d28886c4cbe8bee2d36ca84e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.6951904
+      objectReference: {fileID: 0}
+    - target: {fileID: 5512089859848088555, guid: f4bf8ab9d28886c4cbe8bee2d36ca84e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.74562925
+      objectReference: {fileID: 0}
+    - target: {fileID: 5512089859848088555, guid: f4bf8ab9d28886c4cbe8bee2d36ca84e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.1960584
+      objectReference: {fileID: 0}
+    - target: {fileID: 5512089859848088555, guid: f4bf8ab9d28886c4cbe8bee2d36ca84e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5512089859848088555, guid: f4bf8ab9d28886c4cbe8bee2d36ca84e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5512089859848088555, guid: f4bf8ab9d28886c4cbe8bee2d36ca84e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5512089859848088555, guid: f4bf8ab9d28886c4cbe8bee2d36ca84e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5512089859848088555, guid: f4bf8ab9d28886c4cbe8bee2d36ca84e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5512089859848088555, guid: f4bf8ab9d28886c4cbe8bee2d36ca84e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5512089859848088555, guid: f4bf8ab9d28886c4cbe8bee2d36ca84e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f4bf8ab9d28886c4cbe8bee2d36ca84e, type: 3}

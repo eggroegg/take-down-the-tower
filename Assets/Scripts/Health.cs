@@ -15,6 +15,8 @@ public class Health : MonoBehaviour
     public GameObject lowLight;
 
     public float health;
+
+    public AudioSource playerDie;
     // Start is called before the first frame update
     void Start()
     {
@@ -48,7 +50,7 @@ public class Health : MonoBehaviour
         }
         if (health <= 0.0f)
         {
-            Debug.Log("You Died.");
+            playerDie.Play();
             gameObject.SetActive(false);
         }
     }
@@ -68,11 +70,6 @@ public class Health : MonoBehaviour
         if (collision.gameObject.CompareTag("Boss"))
         {
             health -= 1.0f;
-        }
-
-        if (collision.gameObject.CompareTag("Boss"))
-        {
-            health -= 2.0f;
         }
     }
 }

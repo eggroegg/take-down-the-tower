@@ -20,6 +20,9 @@ public class Shooting : MonoBehaviour
 
     public Coroutine currentCoroutine;
 
+    public AudioSource gunSFX;
+    public AudioSource shotgunSFX;
+
     // Update is called once per frame
     void Update()
     {
@@ -52,6 +55,7 @@ public class Shooting : MonoBehaviour
             bulletPrefab.GetComponent<Bullet>().pierce = false;
             bulletPrefab.GetComponent<Bullet>().superPierce = false;
             gunSize = 0.6584666f;
+            gunSFX.volume = 1.0f;
 }
 
         if (weaponSwitching.spriteRenderer.sprite == weaponSwitching.weapon2)
@@ -64,6 +68,7 @@ public class Shooting : MonoBehaviour
             bulletPrefab.GetComponent<Bullet>().pierce = false;
             bulletPrefab.GetComponent<Bullet>().superPierce = false;
             gunSize = 0.6584666f;
+            gunSFX.volume = 0.8f;
         }
 
         if (weaponSwitching.spriteRenderer.sprite == weaponSwitching.weapon3)
@@ -76,6 +81,7 @@ public class Shooting : MonoBehaviour
             bulletPrefab.GetComponent<Bullet>().pierce = true;
             bulletPrefab.GetComponent<Bullet>().superPierce = false;
             gunSize = 0.6584666f;
+            gunSFX.volume = 1.5f;
         }
 
         if (weaponSwitching.spriteRenderer.sprite == weaponSwitching.weapon4)
@@ -88,6 +94,7 @@ public class Shooting : MonoBehaviour
             bulletsPrefab.GetComponent<Bullet>().pierce = false;
             bulletsPrefab.GetComponent<Bullet>().superPierce = false;
             gunSize = 1.0f;
+            shotgunSFX.volume = 1.0f;
         }
 
         if (weaponSwitching.spriteRenderer.sprite == weaponSwitching.weapon5)
@@ -100,6 +107,7 @@ public class Shooting : MonoBehaviour
             bulletPrefab.GetComponent<Bullet>().pierce = true;
             bulletPrefab.GetComponent<Bullet>().superPierce = true;
             gunSize = 1.3f;
+            gunSFX.volume = 0.5f;
         }
 
         if (weaponSwitching.spriteRenderer.sprite == weaponSwitching.weapon6)
@@ -112,6 +120,7 @@ public class Shooting : MonoBehaviour
             bulletPrefab.GetComponent<Bullet>().pierce = true;
             bulletPrefab.GetComponent<Bullet>().superPierce = true;
             gunSize = 1.3f;
+            gunSFX.volume = 2.0f;
         }
         gameObject.transform.localScale = new Vector3(gunSize, gunSize, gunSize);
     }
@@ -122,6 +131,7 @@ public class Shooting : MonoBehaviour
         Rigidbody2D body = bullet.GetComponent<Rigidbody2D>();
         bullet.transform.localScale = new Vector3(bulletSize, bulletSize, bulletSize);
         body.AddForce(muzzle.up * bulletForce, ForceMode2D.Impulse);
+        gunSFX.Play();
         Destroy(bullet, lifespan);
     }
 
@@ -131,6 +141,7 @@ public class Shooting : MonoBehaviour
         Rigidbody2D body = bullet.GetComponent<Rigidbody2D>();
         bullet.transform.localScale = new Vector3(bulletSize, bulletSize, bulletSize);
         body.AddForce(muzzle.up * bulletForce, ForceMode2D.Impulse);
+        shotgunSFX.Play();
         Destroy(bullet, lifespan);
     }
 

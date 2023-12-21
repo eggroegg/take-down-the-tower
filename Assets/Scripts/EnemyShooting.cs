@@ -10,6 +10,8 @@ public class EnemyShooting : MonoBehaviour
     public float timer;
 
     public float enemyFireRate;
+
+    public AudioSource enemyShoot;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,5 +41,6 @@ public class EnemyShooting : MonoBehaviour
     void Shoot()
     {
         Instantiate(enemyBullet, enemyBulletPos.position, Quaternion.identity);
+        enemyShoot.Play();
     }
 }

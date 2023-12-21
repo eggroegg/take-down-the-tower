@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Tilemaps;
+/*using UnityEditor.Tilemaps;*/
 using UnityEngine;
 
 public class LaserTankHealth : MonoBehaviour
@@ -8,6 +8,8 @@ public class LaserTankHealth : MonoBehaviour
     public float bossHP;
 
     public GameObject riflePickup;
+
+    public AudioSource tankDie;
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +23,7 @@ public class LaserTankHealth : MonoBehaviour
     {
         if (bossHP <= 0.0f)
         {
+            tankDie.Play();
             riflePickup.SetActive(true);
             gameObject.SetActive(false);
         }

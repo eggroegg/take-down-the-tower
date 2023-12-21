@@ -22,6 +22,8 @@ public class Movement : MonoBehaviour
     public KeyCode interactKey;
     public UnityEvent interactAction;
 
+    
+
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
