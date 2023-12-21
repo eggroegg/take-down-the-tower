@@ -2992,7 +2992,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 99dd014854c6a9543a06f43d3ee254db, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_Volume: 0.729
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -4214,6 +4214,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponSwitching: {fileID: 142113464}
   teleporter: {fileID: 0}
+  pickup: {fileID: 0}
 --- !u!212 &1260335109
 SpriteRenderer:
   m_ObjectHideFlags: 0

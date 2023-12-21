@@ -19,7 +19,7 @@ public class NinjaGateActivate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Bullet.enemiesKilled >= 29)
+        if (Bullet.enemiesKilled >= 19)
         {
             ninjaReady = true;
         }

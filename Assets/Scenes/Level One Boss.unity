@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!82 &358613442 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 7722332364496328695, guid: f4bf8ab9d28886c4cbe8bee2d36ca84e, type: 3}
+  m_PrefabInstance: {fileID: 7519881053880522360}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &445267240
 GameObject:
   m_ObjectHideFlags: 0
@@ -340,7 +345,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 1f3204a380c236b49bfbe4268026a0c7, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_Volume: 0.739
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -551,7 +556,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 499875596}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.10694354, y: -0.3877802, z: -11.2}
+  m_LocalPosition: {x: 0.10872131, y: -0.3877902, z: -11.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -726,11 +731,12 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.008017302, y: 1.0478294}
-      - {x: -1.7046838, y: 1.042403}
+    - - {x: 0.013658092, y: 0.935657}
+      - {x: -0.012272009, y: 0.93433464}
+      - {x: -1.6821204, y: 0.9302305}
       - {x: -1.7102088, y: -0.98439187}
       - {x: 1.7102087, y: -1.000335}
-      - {x: 1.6966665, y: 1.0344315}
+      - {x: 1.7023073, y: 0.9390848}
 --- !u!1 &555252403
 GameObject:
   m_ObjectHideFlags: 0
@@ -840,6 +846,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3219203727742479421, guid: 81b08defdd5a284449635d197fcf463e, type: 3}
   m_PrefabInstance: {fileID: 1813917688}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &988792246 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 9164007852336972859, guid: f4bf8ab9d28886c4cbe8bee2d36ca84e, type: 3}
+  m_PrefabInstance: {fileID: 7519881053880522360}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1089642579
 GameObject:
   m_ObjectHideFlags: 0
@@ -940,6 +951,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponSwitching: {fileID: 1813917689}
   teleporter: {fileID: 766171880}
+  pickup: {fileID: 988792246}
 --- !u!58 &1089642583
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1050,6 +1062,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1304765356 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3473410416789687485, guid: f4bf8ab9d28886c4cbe8bee2d36ca84e, type: 3}
+  m_PrefabInstance: {fileID: 7519881053880522360}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1342828283
 GameObject:
   m_ObjectHideFlags: 0
@@ -1178,6 +1195,11 @@ Transform:
 --- !u!82 &1516339825 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 511891237346024524, guid: f4bf8ab9d28886c4cbe8bee2d36ca84e, type: 3}
+  m_PrefabInstance: {fileID: 7519881053880522360}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1590913330 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 877587804, guid: f4bf8ab9d28886c4cbe8bee2d36ca84e, type: 3}
   m_PrefabInstance: {fileID: 7519881053880522360}
   m_PrefabAsset: {fileID: 0}
 --- !u!82 &1609558583 stripped
@@ -1413,6 +1435,10 @@ PrefabInstance:
       propertyPath: bulletsPrefab
       value: 
       objectReference: {fileID: 6524800392697458052, guid: dd5419657721a53488014a5c58359006, type: 3}
+    - target: {fileID: 3219203727742479408, guid: 81b08defdd5a284449635d197fcf463e, type: 3}
+      propertyPath: playerDie
+      value: 
+      objectReference: {fileID: 1590913330}
     - target: {fileID: 3219203727742479409, guid: 81b08defdd5a284449635d197fcf463e, type: 3}
       propertyPath: m_Name
       value: Player
@@ -2104,6 +2130,8 @@ MonoBehaviour:
   weakBullet: {fileID: 3539587921227017486, guid: 14d4ba4b460e719499559e10d3a78f8f, type: 3}
   numberOfTimesToRun: 0
   whatAttack: 0
+  powerBullt: {fileID: 1304765356}
+  weakBullt: {fileID: 358613442}
 --- !u!50 &2039404191
 Rigidbody2D:
   serializedVersion: 4
