@@ -14,8 +14,7 @@ public class MothershipHealth : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        bossHP = 1.00f;
-        //bossHP = 350.0f;
+        bossHP = 350.0f;
     }
 
     // Update is called once per frame
@@ -37,7 +36,7 @@ public class MothershipHealth : MonoBehaviour
         if (bossHP <= 0)
         {
             gameObject.SetActive(false);
-            SceneManager.LoadScene(8);
+            SceneManager.LoadScene(0);
         }
     }
 }

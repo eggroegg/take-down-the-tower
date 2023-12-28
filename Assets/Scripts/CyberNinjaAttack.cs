@@ -28,6 +28,9 @@ public class CyberNinjaAttack : MonoBehaviour
 
     public Light armLight;
 
+    public AudioSource triShuriken;
+    public AudioSource slash;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -79,6 +82,7 @@ public class CyberNinjaAttack : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
 
         armLight.intensity = 0.0f;
+        slash.Play();
         transform.position = Vector2.Lerp(transform.position, playerPos.transform.position, 0.1f);
         yield return new WaitForSeconds(0.05f);
         transform.position = Vector2.Lerp(transform.position, playerPos.transform.position, 0.2f);
@@ -106,6 +110,7 @@ public class CyberNinjaAttack : MonoBehaviour
             yield return new WaitForSeconds(0.15f);
 
             armLight.intensity = 0.0f;
+            slash.Play();
             transform.position = Vector2.Lerp(transform.position, playerPos.transform.position, 0.1f);
             yield return new WaitForSeconds(0.05f);
             transform.position = Vector2.Lerp(transform.position, playerPos.transform.position, 0.2f);
@@ -135,6 +140,7 @@ public class CyberNinjaAttack : MonoBehaviour
     void TShuriken()
     {
         Instantiate(shuriken, hand.position, Quaternion.identity);
+        triShuriken.Play();
     }
 
     IEnumerator TShurikens()

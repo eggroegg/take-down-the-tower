@@ -28,6 +28,11 @@ public class MothershipAttack : MonoBehaviour
 
     public bool secondPhase;
     public bool thirdPhase;
+
+    public AudioSource sawSFX;
+    public AudioSource megaLaserSFX;
+    public AudioSource missileSFX;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -81,6 +86,8 @@ public class MothershipAttack : MonoBehaviour
 
         yield return new WaitForSeconds(0.75f);
 
+        megaLaserSFX.Play();
+
         Instantiate(megaLaser, laserBarrel.position, Quaternion.identity);
 
         yield return new WaitForSeconds(laserCooldown);
@@ -91,7 +98,7 @@ public class MothershipAttack : MonoBehaviour
     void DSaw()
     {
         animator.SetBool("DSaw", true);
-
+        sawSFX.Play();
         Instantiate(saw, missileBarrel1.position, Quaternion.identity);
         Instantiate(saw, missileBarrel2.position, Quaternion.identity);
 
@@ -101,6 +108,7 @@ public class MothershipAttack : MonoBehaviour
     void QMissile()
     {
         Vector3 direction = player.transform.position - transform.position;
+        missileSFX.Play();
         if (whatBarrel == 1)
         {
             Instantiate(missile, missileBarrel1.position, Quaternion.identity);

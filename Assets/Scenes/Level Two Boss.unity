@@ -341,6 +341,11 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!82 &266128949 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1602471220947488224, guid: f4bf8ab9d28886c4cbe8bee2d36ca84e, type: 3}
+  m_PrefabInstance: {fileID: 6886353523820830113}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &507199032
 GameObject:
   m_ObjectHideFlags: 0
@@ -468,6 +473,8 @@ MonoBehaviour:
   playerPos: {fileID: 1162932392}
   phase2: 0
   armLight: {fileID: 2121470969}
+  triShuriken: {fileID: 1000592638}
+  slash: {fileID: 266128949}
 --- !u!114 &507199038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -542,6 +549,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!82 &527588282 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 9164007852336972859, guid: f4bf8ab9d28886c4cbe8bee2d36ca84e, type: 3}
+  m_PrefabInstance: {fileID: 6886353523820830113}
+  m_PrefabAsset: {fileID: 0}
 --- !u!82 &631464849 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 5512089859358102022, guid: f4bf8ab9d28886c4cbe8bee2d36ca84e, type: 3}
@@ -746,6 +758,11 @@ AudioSource:
   m_CorrespondingSourceObject: {fileID: 3337241721607289087, guid: f4bf8ab9d28886c4cbe8bee2d36ca84e, type: 3}
   m_PrefabInstance: {fileID: 6886353523820830113}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &1000592638 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6652441236279526047, guid: f4bf8ab9d28886c4cbe8bee2d36ca84e, type: 3}
+  m_PrefabInstance: {fileID: 6886353523820830113}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1162932391
 GameObject:
   m_ObjectHideFlags: 0
@@ -810,7 +827,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponSwitching: {fileID: 1850727379}
   teleporter: {fileID: 84699469}
-  pickup: {fileID: 0}
+  pickup: {fileID: 527588282}
 --- !u!212 &1182213689
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1970,10 +1987,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3337241721607289087, guid: f4bf8ab9d28886c4cbe8bee2d36ca84e, type: 3}
-      propertyPath: m_Volume
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5512089859848088554, guid: f4bf8ab9d28886c4cbe8bee2d36ca84e, type: 3}
       propertyPath: m_Name
       value: SFX
