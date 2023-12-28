@@ -9,6 +9,8 @@ public class EnemyHealth : MonoBehaviour
 
     public AudioSource enemyDie;
 
+    public ParticleSystem enemyDieAnim;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +24,7 @@ public class EnemyHealth : MonoBehaviour
         {
             Bullet.enemiesKilled++;
             enemyDie.Play();
+            enemyDieAnim.Play();
             gameObject.SetActive(false);
         }
     }
