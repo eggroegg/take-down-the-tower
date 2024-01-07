@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Health : MonoBehaviour
 {
@@ -50,8 +51,7 @@ public class Health : MonoBehaviour
         }
         if (health <= 0.0f)
         {
-            playerDie.Play();
-            gameObject.SetActive(false);
+            PlayerDie();
         }
     }
 
@@ -71,5 +71,18 @@ public class Health : MonoBehaviour
         {
             health -= 1.0f;
         }
+    }
+
+    void PlayerDie()
+    {
+        StartCoroutine(Die());
+    }
+
+    IEnumerator Die()
+    {
+        playerDie.Play();
+        gameObject.SetActive(false);
+        yield return new WaitForSeconds(1.0f);
+        SceneManager.LoadScene(1);
     }
 }

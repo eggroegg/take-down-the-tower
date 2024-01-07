@@ -39,5 +39,15 @@ public class CyberNinjaMovement : MonoBehaviour
         {
             waypointIndex = 0;
         }
+
+        if (waypointIndex == 2)
+        {
+            gameObject.transform.localScale = new Vector3(-0.7f, 0.7f, 0.7f);
+        }
+
+        if(waypointIndex == 0)
+        {
+            gameObject.transform.localScale = new Vector3(0.7f, 0.7f, 0.7f);
+        }
     }
 }

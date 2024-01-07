@@ -31,6 +31,8 @@ public class CyberNinjaAttack : MonoBehaviour
     public AudioSource triShuriken;
     public AudioSource slash;
 
+    public float moveSpeed = 7.5f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -83,27 +85,27 @@ public class CyberNinjaAttack : MonoBehaviour
 
         armLight.intensity = 0.0f;
         slash.Play();
-        transform.position = Vector2.Lerp(transform.position, playerPos.transform.position, 0.1f);
+        transform.position = Vector3.Lerp(transform.position, playerPos.transform.position, 0.1f);
         yield return new WaitForSeconds(0.05f);
-        transform.position = Vector2.Lerp(transform.position, playerPos.transform.position, 0.2f);
+        transform.position = Vector3.Lerp(transform.position, playerPos.transform.position, 0.2f);
         yield return new WaitForSeconds(0.05f);
-        transform.position = Vector2.Lerp(transform.position, playerPos.transform.position, 0.3f);
+        transform.position = Vector3.Lerp(transform.position, playerPos.transform.position, 0.3f);
         yield return new WaitForSeconds(0.05f);
-        transform.position = Vector2.Lerp(transform.position, playerPos.transform.position, 0.4f);
+        transform.position = Vector3.Lerp(transform.position, playerPos.transform.position, 0.4f);
         yield return new WaitForSeconds(0.05f);
-        transform.position = Vector2.Lerp(transform.position, playerPos.transform.position, 0.5f);
+        transform.position = Vector3.Lerp(transform.position, playerPos.transform.position, 0.5f);
         yield return new WaitForSeconds(0.05f);
-        transform.position = Vector2.Lerp(transform.position, playerPos.transform.position, 0.6f);
+        transform.position = Vector3.Lerp(transform.position, playerPos.transform.position, 0.6f);
         yield return new WaitForSeconds(0.05f);
-        transform.position = Vector2.Lerp(transform.position, playerPos.transform.position, 0.7f);
+        transform.position = Vector3.Lerp(transform.position, playerPos.transform.position, 0.7f);
         yield return new WaitForSeconds(0.05f);
-        transform.position = Vector2.Lerp(transform.position, playerPos.transform.position, 0.8f);
+        transform.position = Vector3.Lerp(transform.position, playerPos.transform.position, 0.8f);
         yield return new WaitForSeconds(0.05f);
-        transform.position = Vector2.Lerp(transform.position, playerPos.transform.position, 0.9f);
+        transform.position = Vector3.Lerp(transform.position, playerPos.transform.position, 0.9f);
         yield return new WaitForSeconds(0.05f);
-        transform.position = Vector2.Lerp(transform.position, playerPos.transform.position, 1.0f);
+        transform.position = Vector3.Lerp(transform.position, playerPos.transform.position, 1.0f);
 
-        if(phase2 == true)
+        if (phase2 == true)
         {
             playerPos.transform.position = player.transform.position;
             armLight.intensity = 1.38f;
@@ -111,25 +113,25 @@ public class CyberNinjaAttack : MonoBehaviour
 
             armLight.intensity = 0.0f;
             slash.Play();
-            transform.position = Vector2.Lerp(transform.position, playerPos.transform.position, 0.1f);
+            transform.position = Vector3.Lerp(transform.position, playerPos.transform.position, 0.1f);
             yield return new WaitForSeconds(0.05f);
-            transform.position = Vector2.Lerp(transform.position, playerPos.transform.position, 0.2f);
+            transform.position = Vector3.Lerp(transform.position, playerPos.transform.position, 0.2f);
             yield return new WaitForSeconds(0.05f);
-            transform.position = Vector2.Lerp(transform.position, playerPos.transform.position, 0.3f);
+            transform.position = Vector3.Lerp(transform.position, playerPos.transform.position, 0.3f);
             yield return new WaitForSeconds(0.05f);
-            transform.position = Vector2.Lerp(transform.position, playerPos.transform.position, 0.4f);
+            transform.position = Vector3.Lerp(transform.position, playerPos.transform.position, 0.4f);
             yield return new WaitForSeconds(0.05f);
-            transform.position = Vector2.Lerp(transform.position, playerPos.transform.position, 0.5f);
+            transform.position = Vector3.Lerp(transform.position, playerPos.transform.position, 0.5f);
             yield return new WaitForSeconds(0.05f);
-            transform.position = Vector2.Lerp(transform.position, playerPos.transform.position, 0.6f);
+            transform.position = Vector3.Lerp(transform.position, playerPos.transform.position, 0.6f);
             yield return new WaitForSeconds(0.05f);
-            transform.position = Vector2.Lerp(transform.position, playerPos.transform.position, 0.7f);
+            transform.position = Vector3.Lerp(transform.position, playerPos.transform.position, 0.7f);
             yield return new WaitForSeconds(0.05f);
-            transform.position = Vector2.Lerp(transform.position, playerPos.transform.position, 0.8f);
+            transform.position = Vector3.Lerp(transform.position, playerPos.transform.position, 0.8f);
             yield return new WaitForSeconds(0.05f);
-            transform.position = Vector2.Lerp(transform.position, playerPos.transform.position, 0.9f);
+            transform.position = Vector3.Lerp(transform.position, playerPos.transform.position, 0.9f);
             yield return new WaitForSeconds(0.05f);
-            transform.position = Vector2.Lerp(transform.position, playerPos.transform.position, 1.0f);
+            transform.position = Vector3.Lerp(transform.position, playerPos.transform.position, 1.0f);
         }
 
         cyberNinjaMovement.enabled = true;
