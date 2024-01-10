@@ -102,21 +102,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7019111267302894616, guid: e77087180d2c17549ab07ad2ea86b360, type: 3}
   m_PrefabInstance: {fileID: 5268221574839947747}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &5527726430743232510
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2915129810296880635}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0517c5fd4bfca5a4f95b022c9e1c2222, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyHP: 0
-  enemyDie: {fileID: 0}
-  enemyDieAnim: {fileID: 0}
 --- !u!61 &5882255980525310739
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -143,3 +128,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.89891994, y: 1.231888}
   m_EdgeRadius: 0
+--- !u!114 &5527726430743232510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2915129810296880635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0517c5fd4bfca5a4f95b022c9e1c2222, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyHP: 0
+  enemyDie: {fileID: 0}
+  enemyDieAnim: {fileID: 6762963564560344525, guid: 4bc97b32afabb5c4692ece20f8a020ae, type: 3}

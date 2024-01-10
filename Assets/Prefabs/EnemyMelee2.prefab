@@ -147,6 +147,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   strongEnemyHP: 0
   strongEnemyDie: {fileID: 0}
+  strongEnemyDieAnim: {fileID: 6762963564560344525, guid: 4bc97b32afabb5c4692ece20f8a020ae, type: 3}
 --- !u!114 &1062029796233717889
 MonoBehaviour:
   m_ObjectHideFlags: 0

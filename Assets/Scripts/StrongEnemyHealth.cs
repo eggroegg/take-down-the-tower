@@ -9,6 +9,8 @@ public class StrongEnemyHealth : MonoBehaviour
 
     public AudioSource strongEnemyDie;
 
+    public ParticleSystem strongEnemyDieAnim;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,9 +22,15 @@ public class StrongEnemyHealth : MonoBehaviour
     {
         if (strongEnemyHP <= 0.0f)
         {
-            Bullet.enemiesKilled++;
-            strongEnemyDie.Play();
-            gameObject.SetActive(false);
+            strongEnemyDestroy();
         }
+    }
+
+    public void strongEnemyDestroy()
+    {
+        Bullet.enemiesKilled++;
+        strongEnemyDie.Play();
+        Instantiate(strongEnemyDieAnim, transform.position, Quaternion.identity);
+        gameObject.SetActive(false);
     }
 }
