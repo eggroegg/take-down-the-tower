@@ -210,7 +210,7 @@ Transform:
   m_GameObject: {fileID: 7019111267302894616}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.0108247, y: 1.9842, z: -0.14}
-  m_LocalScale: {x: 1.3521483, y: 1.3521483, z: 1.3521483}
+  m_LocalScale: {x: 1.828305, y: 1.828305, z: 1.828305}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7019111266796875447}
@@ -323,7 +323,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  target: {fileID: 0}
+  target: {fileID: 3219203727742479421, guid: 81b08defdd5a284449635d197fcf463e, type: 3}
 --- !u!114 &7019111267302894608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -355,7 +355,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHP: 0
   enemyDie: {fileID: 0}
-  enemyDieAnim: {fileID: 0}
+  enemyDieAnim: {fileID: 6762963564560344525, guid: 4bc97b32afabb5c4692ece20f8a020ae, type: 3}
 --- !u!61 &3735860199394471463
 BoxCollider2D:
   m_ObjectHideFlags: 0

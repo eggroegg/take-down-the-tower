@@ -81,6 +81,11 @@ public class Bullet : MonoBehaviour
             collision.gameObject.GetComponent<Secret>().found = true;
             Destroy(gameObject);
         }
+
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Destroy(gameObject);
+        }
     }
 
     public void Update()

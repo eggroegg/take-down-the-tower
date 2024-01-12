@@ -1184,14 +1184,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1405301022}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
   m_LocalPosition: {x: 0, y: -0.299, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2039404189}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!82 &1516339825 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 511891237346024524, guid: f4bf8ab9d28886c4cbe8bee2d36ca84e, type: 3}
@@ -2132,6 +2132,8 @@ MonoBehaviour:
   whatAttack: 0
   powerBullt: {fileID: 1304765356}
   weakBullt: {fileID: 358613442}
+  powerBulltParticle: {fileID: 5010131062547415516, guid: 096bfbd4619ddcc499a8b3e20f3e172a, type: 3}
+  weakBulltParticle: {fileID: 7120118828944338182, guid: 63f642c4bf6100444a71691c69e6bed9, type: 3}
 --- !u!50 &2039404191
 Rigidbody2D:
   serializedVersion: 4
@@ -2194,6 +2196,7 @@ MonoBehaviour:
   bossHP: 0
   riflePickup: {fileID: 1089642579}
   tankDie: {fileID: 1516339825}
+  tankDieAnim: {fileID: 215539290577495973, guid: c660baa553e17824d80e5d1939033e21, type: 3}
 --- !u!114 &2039404194
 MonoBehaviour:
   m_ObjectHideFlags: 0

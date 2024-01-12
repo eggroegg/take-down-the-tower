@@ -386,6 +386,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   strongEnemyHP: 0
   strongEnemyDie: {fileID: 0}
+  strongEnemyDieAnim: {fileID: 0}
 --- !u!61 &6468069392331713796
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -11,6 +11,8 @@ public class LaserTankHealth : MonoBehaviour
 
     public AudioSource tankDie;
 
+    public ParticleSystem tankDieAnim;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +26,7 @@ public class LaserTankHealth : MonoBehaviour
         if (bossHP <= 0.0f)
         {
             tankDie.Play();
+            Instantiate(tankDieAnim, transform.position, Quaternion.identity);
             riflePickup.SetActive(true);
             gameObject.SetActive(false);
         }

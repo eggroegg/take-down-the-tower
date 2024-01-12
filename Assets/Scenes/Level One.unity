@@ -2034,6 +2034,7 @@ MonoBehaviour:
   found: 0
   secretRoom: {fileID: 274595869}
   secretWalls: {fileID: 1224153054}
+  explosionAnim: {fileID: 4671156736154098053, guid: b7616887d2f20aa46b328739ab0a6e04, type: 3}
 --- !u!58 &602296485
 CircleCollider2D:
   m_ObjectHideFlags: 0

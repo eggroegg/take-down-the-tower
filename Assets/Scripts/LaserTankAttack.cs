@@ -19,6 +19,9 @@ public class LaserTankAttack : MonoBehaviour
     public AudioSource powerBullt;
     public AudioSource weakBullt;
 
+    public ParticleSystem powerBulltParticle;
+    public ParticleSystem weakBulltParticle;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -62,6 +65,7 @@ public class LaserTankAttack : MonoBehaviour
         animator.SetBool("Shooting (Power)", true);
 
         Instantiate(powerBullet, barrel.position, Quaternion.identity);
+        Instantiate(powerBulltParticle, barrel.position, Quaternion.identity);
 
         animator.SetBool("Shooting (Power)", false);
 
@@ -71,6 +75,7 @@ public class LaserTankAttack : MonoBehaviour
     void RapidShot()
     {
         Instantiate(weakBullet, barrel.position, Quaternion.identity);
+        Instantiate(weakBulltParticle, barrel.position, barrel.rotation);
         weakBullt.Play();
     }
 
