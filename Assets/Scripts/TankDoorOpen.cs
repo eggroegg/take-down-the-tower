@@ -18,7 +18,7 @@ public class TankDoorOpen : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Bullet.enemiesKilled == 14)
+        if (Bullet.enemiesKilled >= 14)
         {
             tankReady = true;
         }

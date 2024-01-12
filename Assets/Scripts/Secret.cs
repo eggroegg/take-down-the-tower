@@ -7,6 +7,7 @@ public class Secret : MonoBehaviour
     public bool found;
     public GameObject secretRoom;
     public GameObject secretWalls;
+    public ParticleSystem explosionAnim;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +23,7 @@ public class Secret : MonoBehaviour
         {
             secretWalls.SetActive(false);
             secretRoom.SetActive(true);
+            Instantiate(explosionAnim, transform.position, Quaternion.identity);
             gameObject.SetActive(false);
         }
     }

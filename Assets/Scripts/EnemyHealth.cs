@@ -22,13 +22,13 @@ public class EnemyHealth : MonoBehaviour
     {
         if (enemyHP <= 0.0f)
         {
+            Bullet.enemiesKilled++;
             enemyDestroy();
         }
     }
 
     public void enemyDestroy()
     {
-        Bullet.enemiesKilled++;
         enemyDie.Play();
         Instantiate(enemyDieAnim, transform.position, Quaternion.identity);
         gameObject.SetActive(false);
