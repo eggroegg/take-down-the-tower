@@ -261,6 +261,10 @@ PrefabInstance:
       value: EnemyMelee
       objectReference: {fileID: 0}
     - target: {fileID: 6272547493756730596, guid: 18b4d1b2918c47d44bdbeadf7839185f, type: 3}
+      propertyPath: bullet
+      value: 
+      objectReference: {fileID: 4324243372944044393, guid: 12478496793bc2d4aabb3b1ce5f8a194, type: 3}
+    - target: {fileID: 6272547493756730596, guid: 18b4d1b2918c47d44bdbeadf7839185f, type: 3}
       propertyPath: enemyDie
       value: 
       objectReference: {fileID: 1012384433}
@@ -1577,6 +1581,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2076332918}
     - target: {fileID: 3219203727247164251, guid: 81b08defdd5a284449635d197fcf463e, type: 3}
+      propertyPath: shootAnim
+      value: 
+      objectReference: {fileID: 6670681042147019919, guid: 942d63024821d7c408a4bb9fdb0fae8d, type: 3}
+    - target: {fileID: 3219203727247164251, guid: 81b08defdd5a284449635d197fcf463e, type: 3}
       propertyPath: shotgunSFX
       value: 
       objectReference: {fileID: 1590586110}
@@ -1584,6 +1592,10 @@ PrefabInstance:
       propertyPath: bulletsPrefab
       value: 
       objectReference: {fileID: 6524800392697458052, guid: dd5419657721a53488014a5c58359006, type: 3}
+    - target: {fileID: 3219203727247164251, guid: 81b08defdd5a284449635d197fcf463e, type: 3}
+      propertyPath: shotgunShootAnim
+      value: 
+      objectReference: {fileID: 1866638552982014426, guid: f422417238a6feb4ba4f94e6f20e8982, type: 3}
     - target: {fileID: 3219203727247164253, guid: 81b08defdd5a284449635d197fcf463e, type: 3}
       propertyPath: m_Sprite
       value: 

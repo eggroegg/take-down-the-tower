@@ -30,6 +30,7 @@ public class EnemyHealth : MonoBehaviour
     public void enemyDestroy()
     {
         enemyDie.Play();
+        Debug.Log(Bullet.enemiesKilled);
         Instantiate(enemyDieAnim, transform.position, Quaternion.identity);
         gameObject.SetActive(false);
     }

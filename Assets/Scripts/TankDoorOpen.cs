@@ -22,6 +22,7 @@ public class TankDoorOpen : MonoBehaviour
         {
             tankReady = true;
         }
+        Debug.Log(Bullet.enemiesKilled);
     }
 
     void OnCollisionEnter2D(Collision2D collision)

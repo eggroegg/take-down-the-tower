@@ -23,6 +23,9 @@ public class Shooting : MonoBehaviour
     public AudioSource gunSFX;
     public AudioSource shotgunSFX;
 
+    public ParticleSystem shootAnim;
+    public ParticleSystem shotgunShootAnim;
+
     // Update is called once per frame
     void Update()
     {
@@ -101,7 +104,7 @@ public class Shooting : MonoBehaviour
         {
             bulletForce = -10.0f;
             fireRate = 0.01f;
-            lifespan = 0.1f;
+            lifespan = 0.075f;
             bulletSize = 0.3f;
             bulletPrefab.GetComponent<Bullet>().damage = 0.1f;
             bulletPrefab.GetComponent<Bullet>().pierce = true;
@@ -132,6 +135,7 @@ public class Shooting : MonoBehaviour
         bullet.transform.localScale = new Vector3(bulletSize, bulletSize, bulletSize);
         body.AddForce(muzzle.up * bulletForce, ForceMode2D.Impulse);
         gunSFX.Play();
+        Instantiate(shootAnim, muzzle.transform.position, muzzle.transform.rotation);
         Destroy(bullet, lifespan);
     }
 
@@ -142,6 +146,7 @@ public class Shooting : MonoBehaviour
         bullet.transform.localScale = new Vector3(bulletSize, bulletSize, bulletSize);
         body.AddForce(muzzle.up * bulletForce, ForceMode2D.Impulse);
         shotgunSFX.Play();
+        Instantiate(shotgunShootAnim, muzzle.transform.position, muzzle.transform.rotation);
         Destroy(bullet, lifespan);
     }
 
