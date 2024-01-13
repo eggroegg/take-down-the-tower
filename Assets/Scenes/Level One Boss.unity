@@ -1419,10 +1419,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3219203727247164250, guid: 81b08defdd5a284449635d197fcf463e, type: 3}
-      propertyPath: weapon4
-      value: 
-      objectReference: {fileID: 21300000, guid: 8a9657753b369604eb163cdc4b4fcf15, type: 3}
     - target: {fileID: 3219203727247164251, guid: 81b08defdd5a284449635d197fcf463e, type: 3}
       propertyPath: gunSFX
       value: 
@@ -1431,10 +1427,6 @@ PrefabInstance:
       propertyPath: shotgunSFX
       value: 
       objectReference: {fileID: 1609558583}
-    - target: {fileID: 3219203727247164251, guid: 81b08defdd5a284449635d197fcf463e, type: 3}
-      propertyPath: bulletsPrefab
-      value: 
-      objectReference: {fileID: 6524800392697458052, guid: dd5419657721a53488014a5c58359006, type: 3}
     - target: {fileID: 3219203727742479408, guid: 81b08defdd5a284449635d197fcf463e, type: 3}
       propertyPath: playerDie
       value: 
@@ -1451,14 +1443,6 @@ PrefabInstance:
       propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1089642582}
-    - target: {fileID: 3219203727742479420, guid: 81b08defdd5a284449635d197fcf463e, type: 3}
-      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PickupRifle
-      objectReference: {fileID: 0}
-    - target: {fileID: 3219203727742479420, guid: 81b08defdd5a284449635d197fcf463e, type: 3}
-      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: PistolPickup, Assembly-CSharp
-      objectReference: {fileID: 0}
     - target: {fileID: 3219203727742479421, guid: 81b08defdd5a284449635d197fcf463e, type: 3}
       propertyPath: m_RootOrder
       value: 1

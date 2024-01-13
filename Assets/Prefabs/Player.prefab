@@ -125,6 +125,8 @@ MonoBehaviour:
   weaponSwitching: {fileID: 3219203727247164250}
   gunSFX: {fileID: 0}
   shotgunSFX: {fileID: 0}
+  shootAnim: {fileID: 6670681042147019919, guid: 942d63024821d7c408a4bb9fdb0fae8d, type: 3}
+  shotgunShootAnim: {fileID: 1866638552982014426, guid: f422417238a6feb4ba4f94e6f20e8982, type: 3}
 --- !u!114 &3219203727247164250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -379,7 +381,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PistolPickup, Assembly-CSharp
-        m_MethodName: PickupSword
+        m_MethodName: PickupRifle
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
