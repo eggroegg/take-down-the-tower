@@ -86,6 +86,11 @@ public class Bullet : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        if (collision.gameObject.CompareTag("EBullet"))
+        {
+            Destroy(gameObject);
+        }
     }
 
     public void Update()

@@ -397,7 +397,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.55456114, y: -0.6753244}
+  m_Offset: {x: -0.24038059, y: -0.5544919}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -408,7 +408,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.7887373, y: 4.5415177}
+  m_Size: {x: 4.075807, y: 3.6876352}
   m_EdgeRadius: 0
 --- !u!50 &507199035
 Rigidbody2D:
@@ -470,12 +470,13 @@ MonoBehaviour:
   whatAttack: 0
   player: {fileID: 1850727378}
   cyberNinjaMovement: {fileID: 507199036}
-  playerPos: {fileID: 1850727378}
+  playerPos: {fileID: 1162932392}
   phase2: 0
   armLight: {fileID: 2121470969}
   triShuriken: {fileID: 1000592638}
   slash: {fileID: 266128949}
   moveSpeed: 7.5
+  dashRes: {fileID: 365678674523269416, guid: bf9d84024abfc314ab2fda7fbf2c399c, type: 3}
 --- !u!114 &507199038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -492,6 +493,7 @@ MonoBehaviour:
   cyberNinjaAttack: {fileID: 507199037}
   shotgunPickup: {fileID: 1182213687}
   ninjaDie: {fileID: 809453696}
+  ninjaDieAnim: {fileID: 7970411369887501058, guid: 653a5ed99d5705d44a1c0f6881bc5d4b, type: 3}
 --- !u!1 &507851051
 GameObject:
   m_ObjectHideFlags: 0
@@ -1524,14 +1526,6 @@ PrefabInstance:
       propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1182213688}
-    - target: {fileID: 3219203727742479420, guid: 81b08defdd5a284449635d197fcf463e, type: 3}
-      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PickupShotgun
-      objectReference: {fileID: 0}
-    - target: {fileID: 3219203727742479420, guid: 81b08defdd5a284449635d197fcf463e, type: 3}
-      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: PistolPickup, Assembly-CSharp
-      objectReference: {fileID: 0}
     - target: {fileID: 3219203727742479421, guid: 81b08defdd5a284449635d197fcf463e, type: 3}
       propertyPath: m_RootOrder
       value: 2

@@ -12,6 +12,8 @@ public class CyberNinjaHealth : MonoBehaviour
 
     public AudioSource ninjaDie;
 
+    public ParticleSystem ninjaDieAnim;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -32,6 +34,7 @@ public class CyberNinjaHealth : MonoBehaviour
         if (bossHP <= 0.0f)
         {
             ninjaDie.Play();
+            Instantiate(ninjaDieAnim, transform.position, Quaternion.identity);
             shotgunPickup.SetActive(true);
             gameObject.SetActive(false);
         }

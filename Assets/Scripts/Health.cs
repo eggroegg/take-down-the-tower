@@ -71,6 +71,11 @@ public class Health : MonoBehaviour
         {
             health -= 1.0f;
         }
+
+        if (collision.gameObject.CompareTag("Boss2"))
+        {
+            health -= 1.0f;
+        }
     }
 
     void PlayerDie()

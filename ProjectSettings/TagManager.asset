@@ -15,6 +15,7 @@ TagManager:
   - Boss2
   - Wall
   - Boss3
+  - EBullet
   layers:
   - Default
   - TransparentFX

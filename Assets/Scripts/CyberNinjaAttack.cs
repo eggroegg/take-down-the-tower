@@ -33,6 +33,8 @@ public class CyberNinjaAttack : MonoBehaviour
 
     public float moveSpeed = 7.5f;
 
+    public ParticleSystem dashRes;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -86,24 +88,34 @@ public class CyberNinjaAttack : MonoBehaviour
         armLight.intensity = 0.0f;
         slash.Play();
         transform.position = Vector3.Lerp(transform.position, playerPos.transform.position, 0.1f);
+        Instantiate(dashRes, transform.position, transform.rotation);
         yield return new WaitForSeconds(0.05f);
         transform.position = Vector3.Lerp(transform.position, playerPos.transform.position, 0.2f);
+        Instantiate(dashRes, transform.position, transform.rotation);
         yield return new WaitForSeconds(0.05f);
         transform.position = Vector3.Lerp(transform.position, playerPos.transform.position, 0.3f);
+        Instantiate(dashRes, transform.position, transform.rotation);
         yield return new WaitForSeconds(0.05f);
         transform.position = Vector3.Lerp(transform.position, playerPos.transform.position, 0.4f);
+        Instantiate(dashRes, transform.position, transform.rotation);
         yield return new WaitForSeconds(0.05f);
         transform.position = Vector3.Lerp(transform.position, playerPos.transform.position, 0.5f);
+        Instantiate(dashRes, transform.position, transform.rotation);
         yield return new WaitForSeconds(0.05f);
         transform.position = Vector3.Lerp(transform.position, playerPos.transform.position, 0.6f);
+        Instantiate(dashRes, transform.position, transform.rotation);
         yield return new WaitForSeconds(0.05f);
         transform.position = Vector3.Lerp(transform.position, playerPos.transform.position, 0.7f);
+        Instantiate(dashRes, transform.position, transform.rotation);
         yield return new WaitForSeconds(0.05f);
         transform.position = Vector3.Lerp(transform.position, playerPos.transform.position, 0.8f);
+        Instantiate(dashRes, transform.position, transform.rotation);
         yield return new WaitForSeconds(0.05f);
         transform.position = Vector3.Lerp(transform.position, playerPos.transform.position, 0.9f);
+        Instantiate(dashRes, transform.position, transform.rotation);
         yield return new WaitForSeconds(0.05f);
         transform.position = Vector3.Lerp(transform.position, playerPos.transform.position, 1.0f);
+        Instantiate(dashRes, transform.position, transform.rotation);
 
         if (phase2 == true)
         {
@@ -114,24 +126,34 @@ public class CyberNinjaAttack : MonoBehaviour
             armLight.intensity = 0.0f;
             slash.Play();
             transform.position = Vector3.Lerp(transform.position, playerPos.transform.position, 0.1f);
+            Instantiate(dashRes, transform.position, transform.rotation);
             yield return new WaitForSeconds(0.05f);
             transform.position = Vector3.Lerp(transform.position, playerPos.transform.position, 0.2f);
+            Instantiate(dashRes, transform.position, transform.rotation);
             yield return new WaitForSeconds(0.05f);
             transform.position = Vector3.Lerp(transform.position, playerPos.transform.position, 0.3f);
+            Instantiate(dashRes, transform.position, transform.rotation);
             yield return new WaitForSeconds(0.05f);
             transform.position = Vector3.Lerp(transform.position, playerPos.transform.position, 0.4f);
+            Instantiate(dashRes, transform.position, transform.rotation);
             yield return new WaitForSeconds(0.05f);
             transform.position = Vector3.Lerp(transform.position, playerPos.transform.position, 0.5f);
+            Instantiate(dashRes, transform.position, transform.rotation);
             yield return new WaitForSeconds(0.05f);
             transform.position = Vector3.Lerp(transform.position, playerPos.transform.position, 0.6f);
+            Instantiate(dashRes, transform.position, transform.rotation);
             yield return new WaitForSeconds(0.05f);
             transform.position = Vector3.Lerp(transform.position, playerPos.transform.position, 0.7f);
+            Instantiate(dashRes, transform.position, transform.rotation);
             yield return new WaitForSeconds(0.05f);
             transform.position = Vector3.Lerp(transform.position, playerPos.transform.position, 0.8f);
+            Instantiate(dashRes, transform.position, transform.rotation);
             yield return new WaitForSeconds(0.05f);
             transform.position = Vector3.Lerp(transform.position, playerPos.transform.position, 0.9f);
+            Instantiate(dashRes, transform.position, transform.rotation);
             yield return new WaitForSeconds(0.05f);
             transform.position = Vector3.Lerp(transform.position, playerPos.transform.position, 1.0f);
+            Instantiate(dashRes, transform.position, transform.rotation);
         }
 
         cyberNinjaMovement.enabled = true;
