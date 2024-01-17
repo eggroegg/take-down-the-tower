@@ -1193,6 +1193,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1493240935230757001, guid: 6f8f96198846e314dbe37cd35a9bbe6a, type: 3}
+      propertyPath: maxFrameTime
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1493240935230757001, guid: 6f8f96198846e314dbe37cd35a9bbe6a, type: 3}
       propertyPath: data.dataString
       value: UEsDBBQAAAgIAACYn+sgqlVDYgIAABoFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVMty4jAQ/BVK503KJstrb7sOIXsgoUK2cvFFWGOsQpZcevAIxb/vSLaxQ06I7p6ZntHIZ8KlqSCzSi80Z0vFgPwaEH8mPwYd+QxHulVyzT+h1XxwZgsvokHzRi1XiMc+zKgSrObZb7kVXhwh6CTPlS7nbAuJMtYgnFNhACmtrI+WCJ0H5Ig/dzMfcsLTcOJPn3iaRYMLHjOQFnQnvQrvo4eH6WQ8Hjf6Wu5kJmhZAfPeu6h4GDdxk2nQSWyrkXgmU0Jw03gi9lSFnhNaGYcdoYBxij0GI15fAN8W1tvoB7/muQHbmNT09Mg1jqrOSv6oen4lNbva2J4K5+vUjuqUy2/sXRzoXKvyua0aR76CLXi2e6OnjBrbG28ffvxq28kDFTu6EfBRgHxRC62cZEha7XyoMzB87P5eG0sKyHYdXlu9AV31/ZLau/Q9XELvx0TwcuOp+581sBYqTDusAGi8l79oOCyIaVIg6l38M/BOt/1Naognro1FqulSensb5bSXknmYme/G2URpCQFuTFcgqbCnFaaxtxd4w/XK3jBP1L+ZpnjDtU/hJiTAnT6KbqiVOlwvyxTqsARTvDoruITOtCdecE6JkrLer/5M2rC10znNemFbx9nX1SLRFCX5iGXxZDzc0OHdaDYaTUYAUR7ns8koImH3uMQ+qVjVRpvx4K3JLrnEPWs/JYOFplXYdabpYcE/S9UbOZe5WmcaQL7WGa7GQWMRfJNszjgOaA3Wchnum5xTIlS2A5ZeE6Wh0/nRapp2WVJS8b2yHklJEr4dKfHwdZdXGvYcDr54m+xCLv8BUEsDBBQAAAgIAACYn+thpLt5bQAAAHgAAAAJACQAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0Bq1YqSy0qzszPU7JSMNEz0jM011FQSi9KLMgoBooYgjilmSkgdrSSgUVaYnKaaUqyobmZUVKika6ppampuWlqqkGaYZqluamBUixQfUllQapfYm4qRE9AYklGWmZeSmZeup57UWaKO8hopdhaAFBLAQItABQAAAgIAACYn+sgqlVDYgIAABoFAAALACQAAAAAAAAAAAAAAAAAAABncmFwaDAuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLAQItABQAAAgIAACYn+thpLt5bQAAAHgAAAAJACQAAAAAAAAAAAAAAK8CAABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwUGAAAAAAIAAgC4AAAAZwMAAAAA
       objectReference: {fileID: 0}
@@ -1288,6 +1292,7 @@ Transform:
   - {fileID: 1177721349}
   - {fileID: 453217986}
   - {fileID: 1740779839}
+  - {fileID: 1531945358}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1384,6 +1389,8 @@ MonoBehaviour:
   bossHP: 0
   weaponSwitching: {fileID: 619650935}
   mothershipAttack: {fileID: 1521252261}
+  shipCore: {fileID: 1740779838}
+  mothershipNebula: {fileID: 2868442329718072822, guid: 6c261d82b19057340add809636c9b1aa, type: 3}
 --- !u!50 &1521252263
 Rigidbody2D:
   serializedVersion: 4
@@ -1405,6 +1412,37 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!1 &1531945357
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1531945358}
+  m_Layer: 7
+  m_Name: ShipCore
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1531945358
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1531945357}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.543, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1521252258}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1535680336
 GameObject:
   m_ObjectHideFlags: 0

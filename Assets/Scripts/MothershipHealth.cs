@@ -11,10 +11,14 @@ public class MothershipHealth : MonoBehaviour
     public WeaponSwitching weaponSwitching;
 
     public MothershipAttack mothershipAttack;
+
+    public GameObject shipCore;
+    public ParticleSystem mothershipNebula;
     // Start is called before the first frame update
     void Start()
     {
-        bossHP = 350.0f;
+        bossHP = 1.0f;
+        //bossHP = 350.0f;
     }
 
     // Update is called once per frame
@@ -35,8 +39,14 @@ public class MothershipHealth : MonoBehaviour
         }
         if (bossHP <= 0)
         {
+            Instantiate(mothershipNebula, new Vector3(0f, 6.7f, -2.18f), Quaternion.identity);
             gameObject.SetActive(false);
-            SceneManager.LoadScene(0);
+            Invoke(nameof(loadEnd), 5);
         }
+    }
+
+    void loadEnd()
+    {
+        SceneManager.LoadScene(0);
     }
 }
