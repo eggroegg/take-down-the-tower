@@ -12,6 +12,10 @@ public class MothershipHealth : MonoBehaviour
 
     public MothershipAttack mothershipAttack;
 
+    public AudioSource nebulaSFX;
+
+    public GameObject music;
+
     public GameObject shipCore;
     public ParticleSystem mothershipNebula;
     // Start is called before the first frame update
@@ -39,7 +43,9 @@ public class MothershipHealth : MonoBehaviour
         }
         if (bossHP <= 0)
         {
+            music.SetActive(false);
             Instantiate(mothershipNebula, new Vector3(0f, 6.7f, -2.18f), Quaternion.identity);
+            nebulaSFX.Play();
             gameObject.SetActive(false);
             Invoke(nameof(loadEnd), 5);
         }
