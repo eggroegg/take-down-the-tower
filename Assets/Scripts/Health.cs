@@ -16,8 +16,6 @@ public class Health : MonoBehaviour
     public GameObject lowLight;
 
     public float health;
-
-    public AudioSource playerDie;
     // Start is called before the first frame update
     void Start()
     {
@@ -80,14 +78,7 @@ public class Health : MonoBehaviour
 
     void PlayerDie()
     {
-        StartCoroutine(Die());
-    }
-
-    IEnumerator Die()
-    {
-        playerDie.Play();
-        gameObject.SetActive(false);
-        yield return new WaitForSeconds(1.0f);
         SceneManager.LoadScene(1);
+        gameObject.SetActive(false);
     }
 }

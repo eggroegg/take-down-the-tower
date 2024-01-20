@@ -134,7 +134,6 @@ public class Shooting : MonoBehaviour
         Rigidbody2D body = bullet.GetComponent<Rigidbody2D>();
         bullet.transform.localScale = new Vector3(bulletSize, bulletSize, bulletSize);
         body.AddForce(muzzle.up * bulletForce, ForceMode2D.Impulse);
-        gunSFX.Play();
         Instantiate(shootAnim, muzzle.transform.position, muzzle.transform.rotation);
         Destroy(bullet, lifespan);
     }
@@ -153,6 +152,7 @@ public class Shooting : MonoBehaviour
     IEnumerator Fire()
     {
         Shoot();
+        gunSFX.Play();
         yield return new WaitForSeconds(fireRate);
         currentCoroutine = null;
     }

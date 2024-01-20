@@ -27,7 +27,7 @@ public class WeaponSwitching : MonoBehaviour
     [Header("Plasma Terminator")]
     public Sprite weapon6;
     public static bool terminatorUnlocked;
-    
+
     void ChangeWeapon1()
     {
         spriteRenderer.sprite = weapon1;
@@ -60,6 +60,15 @@ public class WeaponSwitching : MonoBehaviour
 
     void Update()
     {
+        if (weaponUnlocked == false)
+        {
+            spriteRenderer.enabled = false;
+        }
+        else
+        {
+            spriteRenderer.enabled = true;
+        }
+
         if (Input.GetKeyDown("1") && pistolUnlocked == true)
         {
             ChangeWeapon1();
@@ -107,62 +116,53 @@ public class WeaponSwitching : MonoBehaviour
         {
             weaponUnlocked = true;
             pistolUnlocked = true;
-            rifleUnlocked = true;
-            cannonUnlocked = true;
-            shotgunUnlocked = true;
-            swordUnlocked = true;
-            terminatorUnlocked = true;
+            rifleUnlocked = false;
+            cannonUnlocked = false;
+            shotgunUnlocked = false;
+            swordUnlocked = false;
+            terminatorUnlocked = false;
 
         }
         if (SceneManager.GetActiveScene().buildIndex == 3)
         {
             weaponUnlocked = true;
             pistolUnlocked = true;
-            rifleUnlocked = true;
-            cannonUnlocked = true;
-            shotgunUnlocked = true;
-            swordUnlocked = true;
-            terminatorUnlocked = true;
+            rifleUnlocked = false;
+            shotgunUnlocked = false;
+            swordUnlocked = false;
+            terminatorUnlocked = false;
         }
         if (SceneManager.GetActiveScene().buildIndex == 4)
         {
             weaponUnlocked = true;
             pistolUnlocked = true;
             rifleUnlocked = true;
-            cannonUnlocked = true;
-            shotgunUnlocked = true;
-            swordUnlocked = true;
-            terminatorUnlocked = true;
+            shotgunUnlocked = false;
+            swordUnlocked = false;
+            terminatorUnlocked = false;
         }
         if (SceneManager.GetActiveScene().buildIndex == 5)
         {
             weaponUnlocked = true;
             pistolUnlocked = true;
             rifleUnlocked = true;
-            cannonUnlocked = true;
-            shotgunUnlocked = true;
-            swordUnlocked = true;
-            terminatorUnlocked = true;
+            shotgunUnlocked = false;
+            terminatorUnlocked = false;
         }
         if (SceneManager.GetActiveScene().buildIndex == 6)
         {
             weaponUnlocked = true;
             pistolUnlocked = true;
             rifleUnlocked = true;
-            cannonUnlocked = true;
             shotgunUnlocked = true;
-            swordUnlocked = true;
-            terminatorUnlocked = true;
+            terminatorUnlocked = false;
         }
         if (SceneManager.GetActiveScene().buildIndex == 7)
         {
             weaponUnlocked = true;
             pistolUnlocked = true;
             rifleUnlocked = true;
-            cannonUnlocked = true;
             shotgunUnlocked = true;
-            swordUnlocked = true;
-            terminatorUnlocked = true;
         }
     }
 }

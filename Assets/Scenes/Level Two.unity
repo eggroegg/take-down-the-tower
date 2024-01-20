@@ -570,6 +570,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6786cf6ab264bc42ad177620060201b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasRun3: 0
 --- !u!4 &115192426
 Transform:
   m_ObjectHideFlags: 0
@@ -671,6 +672,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f65a120967d10bf40adb8d542bb66060, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasRun4: 0
 --- !u!1001 &134562797
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1017,6 +1019,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyRanged
       objectReference: {fileID: 0}
+    - target: {fileID: 7019111267302894617, guid: e77087180d2c17549ab07ad2ea86b360, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 751012582}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e77087180d2c17549ab07ad2ea86b360, type: 3}
 --- !u!4 &227219197 stripped
@@ -6033,6 +6039,10 @@ PrefabInstance:
       propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2086939055}
+    - target: {fileID: 3219203727742479420, guid: 81b08defdd5a284449635d197fcf463e, type: 3}
+      propertyPath: interactAction.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PickupSword
+      objectReference: {fileID: 0}
     - target: {fileID: 3219203727742479421, guid: 81b08defdd5a284449635d197fcf463e, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -6628,6 +6638,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b0757969e6dd4b4495f761d5e5bae13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasRun2: 0
 --- !u!4 &1318827679
 Transform:
   m_ObjectHideFlags: 0
@@ -7586,6 +7597,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b0757969e6dd4b4495f761d5e5bae13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasRun2: 0
 --- !u!4 &1588751614
 Transform:
   m_ObjectHideFlags: 0
@@ -8379,6 +8391,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 030137ffea5009148a78194a71e81d0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasRun1: 0
 --- !u!4 &1785511586
 Transform:
   m_ObjectHideFlags: 0
@@ -8650,6 +8663,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6786cf6ab264bc42ad177620060201b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasRun3: 0
 --- !u!4 &1889052950
 Transform:
   m_ObjectHideFlags: 0
@@ -8991,6 +9005,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f65a120967d10bf40adb8d542bb66060, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasRun4: 0
 --- !u!60 &2081048301
 PolygonCollider2D:
   m_ObjectHideFlags: 0

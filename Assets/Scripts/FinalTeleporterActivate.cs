@@ -22,7 +22,7 @@ public class FinalTeleporterActivate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Bullet.enemiesKilled >= 58)
+        if (Bullet.enemiesKilled >= 29)
         {
             worthy = true;
             gameObject.GetComponent<CircleCollider2D>().enabled = true;
