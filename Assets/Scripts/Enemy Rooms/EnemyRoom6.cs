@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemyRoom6 : MonoBehaviour
 {
+    public bool hasRun6;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +14,7 @@ public class EnemyRoom6 : MonoBehaviour
         gameObject.transform.GetChild(3).gameObject.SetActive(false);
         gameObject.transform.GetChild(4).gameObject.SetActive(false);
         gameObject.transform.GetChild(5).gameObject.SetActive(false);
+        hasRun6 = false;
     }
 
     // Update is called once per frame
@@ -23,7 +25,7 @@ public class EnemyRoom6 : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player") && hasRun6 == false)
         {
             gameObject.transform.GetChild(0).gameObject.SetActive(true);
             gameObject.transform.GetChild(1).gameObject.SetActive(true);
@@ -31,6 +33,7 @@ public class EnemyRoom6 : MonoBehaviour
             gameObject.transform.GetChild(3).gameObject.SetActive(true);
             gameObject.transform.GetChild(4).gameObject.SetActive(true);
             gameObject.transform.GetChild(5).gameObject.SetActive(true);
+            hasRun6 = true;
         }
     }
 }

@@ -25,7 +25,7 @@ public class NinjaGateActivate : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnColliderEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player") && ninjaReady == true)
         {
