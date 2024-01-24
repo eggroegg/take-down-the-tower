@@ -35,3 +35,6 @@ The game is officially finished mechanically. I've added every level, boss, weap
 
 Dev Diary #4
 The game is now completely finished. Everything has been implemented as originally planned, and you can play it from start to finish with no issues. There's a title screen, credits, secret weapons, everything I wanted to add from the beginning. There's not much more to say, really.
+
+Dev Diary #5
+GitHub page is finished. Wasn't too difficult, since I've hosted websites via GitHub in the past. There was a small issue regarding compression settings, but it was pretty easy to solve.
