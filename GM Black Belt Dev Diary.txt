@@ -1,0 +1,37 @@
+Dev Diary #1
+
+As of writing, I am 13 years old, I've been at Code Ninjas for around 2 years (I think). My 3 favorite things about being here are:
+- I can experiment with a large variety of different genres, expanding my range of knowledge
+- I can be independent, I'm not being heavily guided or watched over by somebody, I just have to follow instructions and
+apply my knowledge. If I have a problem, I have the option of just figuring it out myself
+- It gives me a break where I can do something I enjoy during the week
+
+The project I'm creating is going to be a simple, level based, pixel art top-down 2D shooter, similar to games such as
+Enter the Gungeon. The thing I am most excited for is designing the different enemies, bosses, and weapons. They're very
+fun to theorycraft and turn into a reality.
+
+However, I expect that creating enemies, weapons, and especialy bosses will be difficult, and, more importantly, tedious.
+I plan to create a system where you can easily import a sprite and give it properties that are easily editable, which will
+1) Solve the problem of creating entire new rulesets for new things and 2) The time it takes to acutally implement these rulesets and test them.
+
+Dev Diary #2
+The mechanics I've added are movement, shooting, weapon switching, enemies, and bosses. I'm also in the process of building some levels, I've already built the tutorial and level one.
+
+Movement was simple, I just dropped in a placeholder sprite for the player and attached a basic 2D movement script to it. 
+
+Something to note is that, since this game is top-down, all the rigidbodies on objects will have their gravity scale set to 0.
+
+Shooting was a bit harder, not in terms of actually making the player shoot (you just instantiate a forward moving prefab
+at the point you want to shoot), but because of aiming. Not mechanically aiming, mind you, I mean visually. You see, I wanted a Gungeon-like effect, where the gun sort of orbits around the player, pointing to where you want to shoot. After learning a bit about Quaternions (and a few YouTube tutorials) I got it working well.
+
+As for weapon switching, this one was really easy, and really fun too. I got to design some weapons, this time I designed 5. The first 3 pretty basic, just a middle-ground pistol, fast and weak rifle, and a powerful but slow cannon thing. I should probably say that this game has a futuristic theme. Why? Well, I just like the setting, but it also gives me a lot of leniency with designs. Plus, I can include guns and shooting enemies while keeping it not too violent (you're shooting lasers at robots). Anyways, for the other 2 weapons, they're just a short-range powerful shotgun and a extremely short range sword. I also got to make that system for weapons, enemies, and bosses. It is really fun to use. I suspect I'll be adding more stuff soon. About the actual switching mechanic, you basically just switch the gun's sprite and based on it's current sprite the properties change.
+
+I've made a couple basic enemies, they're pretty boring so far, just an enemy that chases the player down, and one that shoots at the player. I used the A* system for pathfinding because Unity's built-in pathfinding system doesn't work with 2D for some reason.
+
+I've only made one boss, it's the first one you fight so I wanted to make it simple to fight and give it easy to remember attacks, of which there are two: One where they fire a high-damage blast at you, and one where they fire a lot of weak pellets quickly.
+
+Dev Diary #3
+The game is officially finished mechanically. I've added every level, boss, weapon, enemy, etc. that I wanted to add. There are no major bugs affecting gameplay. However, I'm far from finished. The game is still very primitive visually, and presentation-wise, there's almost nothing there. On top of that, there is no sound present in the game. The rest of my time will be spent polishing the game, making actual sprites instead of the placeholders, animations, sound effects, and music.
+
+Dev Diary #4
+The game is now completely finished. Everything has been implemented as originally planned, and you can play it from start to finish with no issues. There's a title screen, credits, secret weapons, everything I wanted to add from the beginning. There's not much more to say, really.
