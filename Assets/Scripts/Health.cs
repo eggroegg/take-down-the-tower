@@ -11,9 +11,7 @@ public class Health : MonoBehaviour
     public Sprite midHealth;
     public Sprite lowHealth;
 
-    public GameObject fullLight;
-    public GameObject midLight;
-    public GameObject lowLight;
+    public GameObject[] lights;
 
     public float health;
     // Start is called before the first frame update
@@ -25,32 +23,37 @@ public class Health : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (health >= 3.0f)
+        switch (health)
         {
-            spriteRenderer.sprite = fullHealth;
-            fullLight.SetActive(true);
-            midLight.SetActive(false);
-            lowLight.SetActive(false);
-            
+            case 3:
+                spriteRenderer.sprite = fullHealth;
+                lights[0].SetActive(true);
+                lights[1].SetActive(false);
+                lights[2].SetActive(false);
+                break;
+            case 2:
+                spriteRenderer.sprite = midHealth;
+                lights[1].SetActive(true);
+                lights[0].SetActive(false);
+                lights[2].SetActive(false);
+                break;
+            case 1:
+                spriteRenderer.sprite = lowHealth;
+                lights[2].SetActive(true);
+                lights[0].SetActive(false);
+                lights[1].SetActive(false);
+                break;
+            case 0:
+                PlayerDie();
+                break;
+            default:
+                spriteRenderer.sprite = fullHealth;
+                lights[0].SetActive(true);
+                lights[1].SetActive(false);
+                lights[2].SetActive(false);
+                break;
         }
-        if (health == 2.0f)
-        {
-            spriteRenderer.sprite = midHealth;
-            fullLight.SetActive(false);
-            midLight.SetActive(true);
-            lowLight.SetActive(false);
-        }
-        if (health == 1.0f)
-        {
-            spriteRenderer.sprite = lowHealth;
-            fullLight.SetActive(false);
-            midLight.SetActive(false);
-            lowLight.SetActive(true);
-        }
-        if (health <= 0.0f)
-        {
-            PlayerDie();
-        }
+        //This must be done in Update or else the player won't take damage from enemy bullets
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -78,7 +81,7 @@ public class Health : MonoBehaviour
 
     void PlayerDie()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         gameObject.SetActive(false);
     }
 }

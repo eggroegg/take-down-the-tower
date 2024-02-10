@@ -65,30 +65,6 @@ public class Movement : MonoBehaviour
         float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg;
     }
 
-    void FixedUpdate()
-    {
-        /*if (horizontal != 0 && vertical != 0)
-        {
-            horizontal *= moveLimiter;
-            vertical *= moveLimiter;
-        }
-
-        if (horizontal > 0)
-        {
-            gameObject.transform.localScale = new Vector3(0.31057f, 0.31057f, 0.31057f);
-        }
-
-        if (horizontal < 0)
-        {
-            gameObject.transform.localScale = new Vector3(-0.31057f, 0.31057f, 0.31057f);
-        }
-
-        body.velocity = new Vector2(horizontal * runSpeed, vertical * runSpeed);
-
-        Vector2 lookDir = mousePos - body.position;
-        float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg;*/
-    }
-
     public void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.tag == "Interactable")

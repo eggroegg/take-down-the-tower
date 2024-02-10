@@ -28,12 +28,6 @@ public class DoubleSaw : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     IEnumerator Lifespan()
     {
         yield return new WaitForSeconds(1.0f);

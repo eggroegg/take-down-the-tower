@@ -93,9 +93,4 @@ public class Bullet : MonoBehaviour
         }
     }
 
-    public void Update()
-    {
-        Debug.Log(enemiesKilled);
-    }
-
 }

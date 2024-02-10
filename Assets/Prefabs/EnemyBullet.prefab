@@ -231,6 +231,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66d7c9f4bc5a38a46990067ac5fcf4e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  rb: {fileID: 0}
+  player: {fileID: 3219203727742479409, guid: 81b08defdd5a284449635d197fcf463e, type: 3}
+  rb: {fileID: 4490115203892011957}
   force: 15

@@ -14,9 +14,4 @@ public class LevelTrigger : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
-
-    void Update()
-    {
-        
-    }
 }
