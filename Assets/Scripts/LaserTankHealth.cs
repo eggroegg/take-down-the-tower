@@ -16,7 +16,7 @@ public class LaserTankHealth : MonoBehaviour
     void Start()
     {
         riflePickup.SetActive(false);
-        bossHP = 75.0f;
+        bossHP = 50.0f;
     }
 
     // Update is called once per frame
